@@ -1,0 +1,10 @@
+Getting Started
+---------------
+
+To initialize your local repository using the LineageOS trees, use a command like this:
+
+    repo init -u git://github.com/dont-try-to-look-here/android.git -b n
+
+Then to sync up:
+
+    repo sync --force-sync --force-broken --no-clone-bundle -jxxx (ur choice dude)
