@@ -24,7 +24,7 @@
 
   <!-- AOSP Projects -->
 
-  <project path="build" name="android_build" groups="pdk,tradefed" remote="n" >
+  <project path="build" name="android_build" groups="pdk,tradefed" remote="dnd" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
