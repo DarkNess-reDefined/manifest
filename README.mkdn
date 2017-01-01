@@ -1,7 +1,7 @@
 Getting Started
 ---------------
 
-To initialize your local repository using the LineageOS trees, use a command like this:
+To initialize your local repository using the our trees, use a command like this:
 
     repo init -u git://github.com/dont-try-to-look-here/manifest.git -b n
 
