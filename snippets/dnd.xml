@@ -2,8 +2,8 @@
 <manifest>
 
   <!-- reDefined Additions -->
-  <project path="manifest" name="dont-try-to-look-here/manifest" remote="dnd" />
-  <project path="vendor/dnd" name="dont-try-to-look-here/android_vendor_dnd" remote="dnd" />  
+  <project path="manifest" name="manifest" remote="dnd" />
+  <project path="vendor/dnd" name="android_vendor_dnd" remote="dnd" /> 
 
   <!-- LineageOS additions -->
   <project path="external/ahbottomnavigation" name="LineageOS/android_external_ahbottomnavigation" />
