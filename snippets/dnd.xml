@@ -3,7 +3,7 @@
 
   <!-- reDefined Additions -->
   <project path="manifest" name="manifest" remote="dnd" />
-  <project path="vendor/dnd" name="android_vendor_dnd" remote="dnd" /> 
+  <project path="vendor/cm" name="android_vendor_dnd" remote="dnd" /> 
 
   <!-- LineageOS additions -->
   <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" />
