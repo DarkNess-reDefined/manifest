@@ -5,12 +5,12 @@
            fetch="https://github.com/dont-try-to-look-here"
            revision="n" />
 
+  <remote  name="laos"
+           fetch="https://github.com/LineageOS" />
+		   
   <remote  name="github"
-           fetch=".."
+           fetch="https://github.com"
            review="review.lineageos.org" />
-
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
@@ -18,7 +18,7 @@
            revision="refs/tags/android-7.1.1_r6" />
 
   <default revision="refs/heads/cm-14.1"
-           remote="github"
+           remote="loas"
            sync-c="true"
            sync-j="4" />
 
