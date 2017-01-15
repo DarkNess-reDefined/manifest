@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="dnd"
-           fetch="https://github.com/dont-try-to-look-here"
+           fetch="https://github.com/DarkNess-reDefined"
            revision="n" />
 
   <remote  name="laos"
