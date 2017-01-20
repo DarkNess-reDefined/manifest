@@ -9,6 +9,34 @@
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="dnd" revision="n" />
   <project path="external/DUtils" name="external_DUtils" remote="dnd" />
   <project path="packages/apps/DUI" name="packages_apps_DUI" remote="dnd" />
+  <project path="vendor/cmsdk" name="cm_platform_sdk" remote="dnd" />
+  <project path="packages/apps/SnapdragonGallery" name="android_packages_apps_SnapdragonGallery" remote="dnd" />
+  <project path="packages/apps/SnapdragonCamera" name="android_packages_apps_SnapdragonCamera" remote="dnd" />
+  <project path="hardware/qcom/audio-caf/apq8084" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8084" remote="dnd" />
+  <project path="hardware/qcom/audio-caf/msm8916" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8916" remote="dnd" />
+  <project path="hardware/qcom/audio-caf/msm8937" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8937" remote="dnd" />
+  <project path="hardware/qcom/audio-caf/msm8952" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8952" remote="dnd" />
+  <project path="hardware/qcom/audio-caf/msm8960" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8960" remote="dnd" />
+  <project path="hardware/qcom/audio-caf/msm8974" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8974" remote="dnd" />
+  <project path="hardware/qcom/audio-caf/msm8994" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8994" remote="dnd" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8996" remote="dnd" />
+  <project path="hardware/qcom/display-caf/apq8084" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8084" remote="dnd" />
+  <project path="hardware/qcom/display-caf/msm8916" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8916" remote="dnd" />
+  <project path="hardware/qcom/display-caf/msm8937" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8937" remote="dnd" />
+  <project path="hardware/qcom/display-caf/msm8952" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8952" remote="dnd" />
+  <project path="hardware/qcom/display-caf/msm8960" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8960" remote="dnd" />
+  <project path="hardware/qcom/display-caf/msm8974" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8974" remote="dnd" />
+  <project path="hardware/qcom/display-caf/msm8994" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8994" remote="dnd" />
+  <project path="hardware/qcom/display-caf/msm8996" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8996" remote="dnd" />
+  <project path="hardware/qcom/media-caf/apq8084" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8084" remote="dnd" />
+  <project path="hardware/qcom/media-caf/msm8916" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8916" remote="dnd" />
+  <project path="hardware/qcom/media-caf/msm8937" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8937" remote="dnd" />
+  <project path="hardware/qcom/media-caf/msm8952" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8952" remote="dnd" />
+  <project path="hardware/qcom/media-caf/msm8960" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8960" remote="dnd" />
+  <project path="hardware/qcom/media-caf/msm8974" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8974" remote="dnd" />
+  <project path="hardware/qcom/media-caf/msm8994" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8994" remote="dnd" />
+  <project path="hardware/qcom/media-caf/msm8996" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8996" remote="dnd" />
+
 
   <!-- LineageOS additions -->
   <project path="device/qcom/common" name="android_device_qcom_common" remote="laos" />
@@ -53,7 +81,6 @@
   <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="laos" />
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="laos" />
   <project path="packages/apps/Profiles" name="android_packages_apps_Profiles" remote="laos" />
-  <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="laos" />
   <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="laos" />
   <project path="packages/providers/DataUsageProvider" name="android_packages_providers_DataUsageProvider" remote="laos" />
   <project path="packages/providers/ThemesProvider" name="android_packages_providers_ThemesProvider" remote="laos" />
@@ -65,7 +92,6 @@
   <project path="packages/themes/HexoLibre" name="android_packages_themes_HexoLibre" groups="themes" remote="laos" />
   <project path="prebuilts/cmsdk" name="android_prebuilts_cmsdk" clone-depth="1" remote="laos" />
   <project path="system/extras/su" name="android_system_extras_su" remote="laos" />
-  <project path="vendor/cmsdk" name="cm_platform_sdk" remote="laos" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="android_packages_apps_OpenWeatherMapProvider" remote="laos" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" name="android_packages_apps_WundergroundWeatherProvider" remote="laos" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider" name="android_packages_apps_YahooWeatherProvider" remote="laos" />
@@ -84,32 +110,8 @@
   <project path="external/libnfnetlink" name="android_external_libnfnetlink" remote="laos" />
   <project path="external/powertop" name="android_external_powertop" remote="laos" />
   <project path="external/protobuf-c" name="android_external_protobuf-c" remote="laos" />
-  <project path="hardware/qcom/audio-caf/apq8084" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8084" remote="laos" />
-  <project path="hardware/qcom/audio-caf/msm8916" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8916" remote="laos" />
-  <project path="hardware/qcom/audio-caf/msm8937" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8937" remote="laos" />
-  <project path="hardware/qcom/audio-caf/msm8952" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8952" remote="laos" />
-  <project path="hardware/qcom/audio-caf/msm8960" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8960" remote="laos" />
-  <project path="hardware/qcom/audio-caf/msm8974" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8974" remote="laos" />
-  <project path="hardware/qcom/audio-caf/msm8994" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8994" remote="laos" />
-  <project path="hardware/qcom/audio-caf/msm8996" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8996" remote="laos" />
   <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" groups="qcom" revision="cm-14.1-caf" remote="laos" />
-  <project path="hardware/qcom/display-caf/apq8084" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8084" remote="laos" />
-  <project path="hardware/qcom/display-caf/msm8916" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8916" remote="laos" />
-  <project path="hardware/qcom/display-caf/msm8937" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8937" remote="laos" />
-  <project path="hardware/qcom/display-caf/msm8952" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8952" remote="laos" />
-  <project path="hardware/qcom/display-caf/msm8960" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8960" remote="laos" />
-  <project path="hardware/qcom/display-caf/msm8974" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8974" remote="laos" />
-  <project path="hardware/qcom/display-caf/msm8994" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8994" remote="laos" />
-  <project path="hardware/qcom/display-caf/msm8996" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8996" remote="laos" />
   <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" groups="qcom,qcom_fm" remote="laos" />
-  <project path="hardware/qcom/media-caf/apq8084" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8084" remote="laos" />
-  <project path="hardware/qcom/media-caf/msm8916" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8916" remote="laos" />
-  <project path="hardware/qcom/media-caf/msm8937" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8937" remote="laos" />
-  <project path="hardware/qcom/media-caf/msm8952" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8952" remote="laos" />
-  <project path="hardware/qcom/media-caf/msm8960" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8960" remote="laos" />
-  <project path="hardware/qcom/media-caf/msm8974" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8974" remote="laos" />
-  <project path="hardware/qcom/media-caf/msm8994" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8994" remote="laos" />
-  <project path="hardware/qcom/media-caf/msm8996" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8996" remote="laos" />
   <project path="hardware/qcom/wlan-caf" name="android_hardware_qcom_wlan" groups="qcom_wlan" revision="cm-14.1-caf" remote="laos" />
   <project path="hardware/ril-caf" name="android_hardware_ril" groups="pdk" revision="cm-14.1-caf" remote="laos" />
   <project path="system/qcom" name="android_system_qcom" groups="qcom" remote="laos" />
