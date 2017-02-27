@@ -78,22 +78,16 @@
   <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="laos" />
   <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="laos" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="laos" />
-  <project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" remote="laos" />
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="laos" />
-  <project path="packages/apps/Eleven" name="android_packages_apps_Eleven" remote="laos" />
   <project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="laos" />
   <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="laos" />
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="laos" />
   <project path="packages/apps/Profiles" name="android_packages_apps_Profiles" remote="laos" />
-  <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="laos" />
   <project path="packages/providers/DataUsageProvider" name="android_packages_providers_DataUsageProvider" remote="laos" />
-  <project path="packages/providers/ThemesProvider" name="android_packages_providers_ThemesProvider" remote="laos" />
   <project path="packages/providers/WeatherProvider" name="android_packages_providers_WeatherProvider" remote="laos" />
   <project path="packages/services/CMAudioService" name="android_packages_services_CMAudioService" remote="laos" />
   <project path="packages/services/LiveLockScreenService" name="android_packages_services_LiveLockScreenService" remote="laos" />
-  <project path="packages/services/ThemeManagerService" name="android_packages_services_ThemeManagerService" remote="laos" />
   <project path="packages/services/WeatherService" name="android_packages_services_WeatherService" remote="laos" />
-  <project path="packages/themes/HexoLibre" name="android_packages_themes_HexoLibre" groups="themes" remote="laos" />
   <project path="prebuilts/cmsdk" name="android_prebuilts_cmsdk" clone-depth="1" remote="laos" />
   <project path="system/extras/su" name="android_system_extras_su" remote="laos" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="android_packages_apps_OpenWeatherMapProvider" remote="laos" />
