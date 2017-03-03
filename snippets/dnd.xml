@@ -84,6 +84,7 @@
   <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="laos" />
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="laos" />
   <project path="packages/apps/Profiles" name="android_packages_apps_Profiles" remote="laos" />
+  <project path="packages/apps/Recorder" name="android_packages_apps_Recorder" remote="laos" />
   <project path="packages/providers/DataUsageProvider" name="android_packages_providers_DataUsageProvider" remote="laos" />
   <project path="packages/providers/WeatherProvider" name="android_packages_providers_WeatherProvider" remote="laos" />
   <project path="packages/services/CMAudioService" name="android_packages_services_CMAudioService" remote="laos" />
