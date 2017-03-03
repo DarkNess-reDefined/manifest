@@ -10,7 +10,6 @@
   <project path="external/DUtils" name="external_DUtils" remote="dnd" />
   <project path="packages/apps/DUI" name="packages_apps_DUI" remote="dnd" />
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="dnd" />
-  <project path="packages/apps/AboutDND" name="packages_apps_AboutDND" remote="dnd" />
   <project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="dnd" />
   <project path="OTA_config" name="dnd_OTA" remote="dnd" revision="master"  >
       <copyfile src="ota_conf" dest="ota_conf" />
