@@ -45,6 +45,7 @@
   <project path="packages/apps/MusicFX" name="packages_apps_MusicFX" remote="dnd" />
   <project path="packages/apps/OmniJaws" name="packages_apps_OmniJaws" remote="dnd" />
   <project path="packages/apps/Snap" name="packages_apps_Snap" remote="dnd" />
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="dnd" />
 
   <!-- LineageOS additions -->
   <project path="device/qcom/common" name="android_device_qcom_common" remote="laos" />
