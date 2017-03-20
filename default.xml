@@ -475,7 +475,7 @@
   <project path="system/firewalld" name="platform/system/firewalld" remote="aosp" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
   <project path="system/keymaster" name="android_system_keymaster" groups="pdk" remote="laos" />
-  <project path="system/media" name="android_system_media" groups="pdk" remote="laos" />
+  <project path="system/media" name="android_system_media" remote="dnd" />
   <project path="system/nativepower" name="platform/system/nativepower" remote="aosp" />
   <project path="system/netd" name="android_system_netd" groups="pdk" remote="laos" />
   <project path="system/nvram" name="platform/system/nvram" remote="aosp" />
