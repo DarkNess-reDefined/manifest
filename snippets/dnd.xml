@@ -46,6 +46,7 @@
   <project path="packages/apps/OmniJaws" name="packages_apps_OmniJaws" remote="dnd" />
   <project path="packages/apps/Snap" name="packages_apps_Snap" remote="dnd" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="dnd" />
+  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="dnd" />
 
   <!-- LineageOS additions -->
   <project path="device/qcom/common" name="android_device_qcom_common" remote="laos" />
@@ -83,7 +84,6 @@
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="laos" />
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="laos" />
   <project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="laos" />
-  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="laos" />
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="laos" />
   <project path="packages/apps/Profiles" name="android_packages_apps_Profiles" remote="laos" />
   <project path="packages/apps/Recorder" name="android_packages_apps_Recorder" remote="laos" />
