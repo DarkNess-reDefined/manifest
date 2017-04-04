@@ -49,6 +49,7 @@
   <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="dnd" />
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="dnd" />
   <project path="packages/apps/Phonograph" name="android_packages_apps_Phonograph" remote="dnd" />
+  <project path="prebuilts/build-tools" name="AICP/prebuilts_build-tools" revision="n7.1" remote="github" />
 
   <!-- LineageOS additions -->
   <project path="device/qcom/common" name="android_device_qcom_common" remote="laos" />
