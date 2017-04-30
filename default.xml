@@ -361,7 +361,6 @@
   <project path="hardware/intel/img/hwcomposer" name="android_hardware_intel_img_hwcomposer" groups="intel,pdk" remote="laos" />
   <project path="hardware/intel/img/psb_headers" name="android_hardware_intel_img_psb_headers" groups="intel,pdk" remote="laos" />
   <project path="hardware/intel/img/psb_video" name="android_hardware_intel_img_psb_video" groups="intel,pdk" remote="laos" />
-  <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors,pdk" remote="aosp" />
   <project path="hardware/invensense" name="android_hardware_invensense" groups="invensense,pdk" remote="laos" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="laos" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="laos" />
