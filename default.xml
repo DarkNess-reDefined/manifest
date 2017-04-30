@@ -3,7 +3,7 @@
 
   <remote  name="dnd"
            fetch="https://github.com/DarkNess-reDefined"
-           revision="n" />
+           revision="n7x" />
 
   <remote  name="laos"
            fetch="https://github.com/LineageOS" />
