@@ -88,6 +88,7 @@
   <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="laos" />
   <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="laos" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="laos" />
+  <project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" remote="laos" />
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="laos" />
   <project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="laos" />
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="laos" />
