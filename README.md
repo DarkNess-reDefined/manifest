@@ -17,6 +17,18 @@ Then to sync up:
     repo sync --force-sync --force-broken --no-clone-bundle -jxxx (ur choice dude)
 
 
+Some important stuffs for your build:
+-----------------
+
+```bash
+   *You have two choices for root
+   For SU : Use "export WITH_SU=true" or add "WITH_SU=true" in tree.
+   For magisk : Use "export WITH_ROOT=true" or add "WITH_ROOT=true" in tree.
+   *You have two choices for equalizer
+   For AudioFX : Use "export WITH_AUDIOFX=true" or add "WITH_AUDIOFX=true" in tree.
+   For DSPManager : Use "export WITH_DSPMANAGER=true" or add "WITH_DSPMANAGER=true" in tree.
+```
+
 Finally to build:
 -----------------
 
