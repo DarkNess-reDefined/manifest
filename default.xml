@@ -12,6 +12,10 @@
            fetch="https://github.com"
            review="review.lineageos.org" />
 
+  <remote fetch="git://codeaurora.org/quic/la"
+          name="caf"
+          review="codeaurora.org"/>
+
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
