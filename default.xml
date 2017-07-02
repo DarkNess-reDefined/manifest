@@ -506,6 +506,6 @@
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk" remote="aosp" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" />
 
-  <include name="snippets/dnd.xml" />
+  <include name="dnd.xml" />
 
 </manifest>
