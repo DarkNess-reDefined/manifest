@@ -93,7 +93,6 @@
   <project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="laos" />
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="laos" />
   <project path="packages/apps/Profiles" name="android_packages_apps_Profiles" remote="laos" />
-  <project path="packages/apps/Recorder" name="android_packages_apps_Recorder" remote="laos" />
   <project path="packages/providers/DataUsageProvider" name="android_packages_providers_DataUsageProvider" remote="laos" />
   <project path="packages/providers/WeatherProvider" name="android_packages_providers_WeatherProvider" remote="laos" />
   <project path="packages/services/CMAudioService" name="android_packages_services_CMAudioService" remote="laos" />
@@ -104,6 +103,9 @@
   <project path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="android_packages_apps_OpenWeatherMapProvider" remote="laos" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" name="android_packages_apps_WundergroundWeatherProvider" remote="laos" />
   <project path="vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider" name="android_packages_apps_YahooWeatherProvider" remote="laos" />
+
+  <!-- CAF -->
+  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="caf" revision="refs/tags/LA.UM.5.7.r1-09100-8x98.0" />
 
   <!-- CodeAurora additions -->
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="laos" />
