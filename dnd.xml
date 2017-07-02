@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- reDefined Additions -->
+  <!-- DarkNess reDefined Additions -->
+  <project path="build" name="android_build" groups="pdk" remote="dnd" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="art" name="android_art" groups="pdk"  remote="dnd" />
+  <project path="bionic" name="android_bionic" groups="pdk"  remote="dnd" />
+  <project path="external/skia" name="android_external_skia" groups="pdk,qcom_msm8x26" remote="dnd" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="dnd" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="dnd" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="dnd" />
+  <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="cm-14.1" remote="dnd" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1" remote="dnd" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" groups="qcom,pdk" revision="cm-14.1" remote="dnd" />
   <project path="manifest" name="manifest" remote="dnd" />
   <project path="vendor/dnd" name="android_vendor_dnd" remote="dnd" /> 
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="dnd" />
+  <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" groups="pdk-fs" remote="dnd" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="dnd" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="dnd" />
+  <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="dnd" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="dnd" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="dnd" />
   <project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="dnd" />
+  <project path="system/media" name="android_system_media" remote="dnd" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="dnd" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="dnd" />
   <project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="dnd" />
   <project path="external/DUtils" name="external_DUtils" remote="dnd" />
@@ -16,6 +38,23 @@
   </project>
   <project path="packages/apps/SnapdragonGallery" name="android_packages_apps_SnapdragonGallery" remote="dnd" />
   <project path="packages/apps/SnapdragonCamera" name="android_packages_apps_SnapdragonCamera" remote="dnd" />
+  <project path="packages/apps/DNDWalls" name="packages_apps_DND-Wallpapers" remote="dnd" />
+  <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" groups="pdk-fs" remote="dnd" />
+  <project path="packages/apps/MusicFX" name="packages_apps_MusicFX" remote="dnd" />
+  <project path="packages/apps/OmniJaws" name="packages_apps_OmniJaws" remote="dnd" />
+  <project path="packages/apps/Snap" name="packages_apps_Snap" remote="dnd" />
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="dnd" />
+  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="dnd" />
+  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="dnd" />
+  <project path="prebuilts/build-tools" name="AICP/prebuilts_build-tools" revision="n7.1" remote="github" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="dnd" />
+  <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="dnd" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="dnd" />
+
+  <!-- CAF -->
+  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="caf" revision="refs/tags/LA.UM.5.7.r1-09100-8x98.0" />
+
+  <!-- Hals -->
   <project path="hardware/qcom/audio-caf/apq8084" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8084" remote="dnd" />
   <project path="hardware/qcom/audio-caf/msm8916" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8916" remote="dnd" />
   <project path="hardware/qcom/audio-caf/msm8937" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8937" remote="dnd" />
@@ -40,95 +79,5 @@
   <project path="hardware/qcom/media-caf/msm8974" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8974" remote="dnd" />
   <project path="hardware/qcom/media-caf/msm8994" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8994" remote="dnd" />
   <project path="hardware/qcom/media-caf/msm8996" name="android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8996" remote="dnd" />
-  <project path="packages/apps/DNDWalls" name="packages_apps_DND-Wallpapers" remote="dnd" />
-  <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" groups="pdk-fs" remote="dnd" />
-  <project path="packages/apps/MusicFX" name="packages_apps_MusicFX" remote="dnd" />
-  <project path="packages/apps/OmniJaws" name="packages_apps_OmniJaws" remote="dnd" />
-  <project path="packages/apps/Snap" name="packages_apps_Snap" remote="dnd" />
-  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="dnd" />
-  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="dnd" />
-  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="dnd" />
-  <project path="prebuilts/build-tools" name="AICP/prebuilts_build-tools" revision="n7.1" remote="github" />
-  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="dnd" />
-  <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="dnd" />
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="dnd" />
-
-  <!-- LineageOS additions -->
-  <project path="device/qcom/common" name="android_device_qcom_common" remote="laos" />
-  <project path="external/ahbottomnavigation" name="android_external_ahbottomnavigation" remote="laos" />
-  <project path="external/bash" name="android_external_bash" remote="laos" />
-  <project path="external/cmsdk-api-coverage" name="android_external_cmsdk-api-coverage" remote="laos" />
-  <project path="external/exfat" name="android_external_exfat" remote="laos" />
-  <project path="external/ffmpeg" name="android_external_ffmpeg" remote="laos" />
-  <project path="external/fuse" name="android_external_fuse" remote="laos" />
-  <project path="external/gello-build" name="android_external_gello_build" remote="laos" />
-  <project path="external/google" name="android_external_google" remote="laos" />
-  <project path="external/htop" name="android_external_htop" remote="laos" />
-  <project path="external/koush/ion" name="ion" remote="laos" />
-  <project path="external/libncurses" name="android_external_libncurses" remote="laos" />
-  <project path="external/libphonenumbergoogle" name="android_external_libphonenumbergoogle" remote="laos" />
-  <project path="external/libtar" name="android_external_libtar" remote="laos" />
-  <project path="external/libtruezip" name="android_external_libtruezip" remote="laos" />
-  <project path="external/lzo" name="android_external_lzo" remote="laos" />
-  <project path="external/nano" name="android_external_nano" remote="laos" />
-  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="laos" />
-  <project path="external/openssh" name="android_external_openssh" remote="laos" />
-  <project path="external/p7zip" name="android_external_p7zip" remote="laos" />
-  <project path="external/pigz" name="android_external_pigz" remote="laos" />
-  <project path="external/rsync" name="android_external_rsync" remote="laos" />
-  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="laos" />
-  <project path="external/uicommon" name="android_external_cyanogen_UICommon" remote="laos" />
-  <project path="external/unrar" name="android_external_unrar" remote="laos" />
-  <project path="external/unzip" name="android_external_unzip" remote="laos" />
-  <project path="external/vim" name="android_external_vim" remote="laos" />
-  <project path="external/yaffs2" name="android_external_yaffs2" remote="laos" />
-  <project path="external/zip" name="android_external_zip" remote="laos" />
-  <project path="hardware/cyanogen" name="android_hardware_cyanogen" remote="laos" />
-  <project path="frameworks/opt/hardware" name="android_frameworks_opt_hardware" remote="laos" />
-  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="laos" />
-  <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="laos" />
-  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="laos" />
-  <project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" remote="laos" />
-  <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="laos" />
-  <project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="laos" />
-  <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="laos" />
-  <project path="packages/apps/Profiles" name="android_packages_apps_Profiles" remote="laos" />
-  <project path="packages/providers/DataUsageProvider" name="android_packages_providers_DataUsageProvider" remote="laos" />
-  <project path="packages/providers/WeatherProvider" name="android_packages_providers_WeatherProvider" remote="laos" />
-  <project path="packages/services/CMAudioService" name="android_packages_services_CMAudioService" remote="laos" />
-  <project path="packages/services/LiveLockScreenService" name="android_packages_services_LiveLockScreenService" remote="laos" />
-  <project path="packages/services/WeatherService" name="android_packages_services_WeatherService" remote="laos" />
-  <project path="prebuilts/cmsdk" name="android_prebuilts_cmsdk" clone-depth="1" remote="laos" />
-  <project path="system/extras/su" name="android_system_extras_su" remote="laos" />
-  <project path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="android_packages_apps_OpenWeatherMapProvider" remote="laos" />
-  <project path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" name="android_packages_apps_WundergroundWeatherProvider" remote="laos" />
-  <project path="vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider" name="android_packages_apps_YahooWeatherProvider" remote="laos" />
-
-  <!-- CAF -->
-  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="caf" revision="refs/tags/LA.UM.5.7.r1-09100-8x98.0" />
-
-  <!-- CodeAurora additions -->
-  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="laos" />
-  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="laos" />
-  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="laos" />
-  <project path="external/brctl" name="android_external_brctl" remote="laos" />
-  <project path="external/connectivity" name="android_external_connectivity" remote="laos" />
-  <project path="external/ebtables" name="android_external_ebtables" remote="laos" />
-  <project path="external/gson" name="android_external_gson" remote="laos" />
-  <project path="external/json-c" name="android_external_json-c" remote="laos" />
-  <project path="external/libnetfilter_conntrack" name="android_external_libnetfilter_conntrack" remote="laos" />
-  <project path="external/libnfnetlink" name="android_external_libnfnetlink" remote="laos" />
-  <project path="external/powertop" name="android_external_powertop" remote="laos" />
-  <project path="external/protobuf-c" name="android_external_protobuf-c" remote="laos" />
-  <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" groups="qcom" revision="cm-14.1-caf" remote="laos" />
-  <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" groups="qcom,qcom_fm" remote="laos" />
-  <project path="hardware/qcom/wlan-caf" name="android_hardware_qcom_wlan" groups="qcom_wlan" revision="cm-14.1-caf" remote="laos" />
-  <project path="hardware/ril-caf" name="android_hardware_ril" groups="pdk" revision="cm-14.1-caf" remote="laos" />
-  <project path="system/qcom" name="android_system_qcom" groups="qcom" remote="laos" />
-  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="laos" />
-  <project path="vendor/qcom/opensource/bluetooth" name="android_vendor_qcom_opensource_bluetooth" remote="laos" />
-  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="laos" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="laos" />
-  <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="laos" />
-  <project path="vendor/qcom/opensource/time-services" name="android_vendor_qcom_opensource_time-services" remote="laos" />
+  
 </manifest>

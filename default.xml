@@ -28,23 +28,14 @@
 
   <!-- AOSP Projects -->
 
-  <project path="build" name="android_build" groups="pdk" remote="dnd" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
-  <project path="build/kati" name="android_build_kati" groups="pdk,tradefed"  remote="laos" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" remote="aosp" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" />
-  <project path="art" name="android_art" groups="pdk"  remote="dnd" />
-  <project path="bionic" name="android_bionic" groups="pdk"  remote="dnd" />
-  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="laos" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="dalvik" name="android_dalvik" groups="pdk-cw-fs,pdk-fs" remote="laos" />
   <project path="developers/build" name="platform/developers/build" remote="aosp" />
-  <project path="development" name="android_development" groups="pdk-cw-fs,pdk-fs" remote="laos" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk" remote="aosp" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" remote="aosp" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" remote="aosp" />
@@ -61,9 +52,7 @@
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs,pdk" remote="aosp" />
   <project path="device/google/contexthub" name="device/google/contexthub" groups="device,marlin,pdk" remote="aosp" />
   <project path="device/sample" name="device/sample" groups="pdk" remote="aosp" />
-  <project path="external/aac" name="android_external_aac" groups="pdk" remote="laos" />
   <project path="external/adt-infra" name="platform/external/adt-infra" groups="adt-infra,notdefault,pdk-fs" remote="aosp" />
-  <project path="external/android-clat" name="android_external_android-clat" groups="pdk-cw-fs,pdk-fs" remote="laos" />
   <project path="external/android-mock" name="platform/external/android-mock" groups="pdk" remote="aosp" />
   <project path="external/androidplot" name="platform/external/androidplot" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/ant-glob" name="platform/external/ant-glob" groups="pdk" remote="aosp" />
@@ -77,17 +66,14 @@
   <project path="external/avahi" name="platform/external/avahi" groups="pdk" remote="aosp" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" remote="aosp" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk" remote="aosp" />
-  <project path="external/boringssl" name="android_external_boringssl" groups="pdk" remote="laos" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" remote="aosp" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" remote="aosp" />
-  <project path="external/bzip2" name="android_external_bzip2" groups="pdk" remote="laos" />
   <project path="external/c-ares" name="platform/external/c-ares" groups="pdk" remote="aosp" />
   <project path="external/caliper" name="platform/external/caliper" groups="pdk" remote="aosp" />
   <project path="external/cblas" name="platform/external/cblas" groups="pdk" remote="aosp" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk" remote="aosp" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk" remote="aosp" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" remote="aosp" />
-  <project path="external/chromium-webview" name="android_external_chromium-webview" groups="pdk" clone-depth="1" remote="laos" />
   <project path="external/clang" name="platform/external/clang" groups="pdk" remote="aosp" />
   <project path="external/cmockery" name="platform/external/cmockery" groups="pdk" remote="aosp" />
   <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" remote="aosp" />
@@ -109,25 +95,20 @@
   <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc,pdk-fs" remote="aosp" />
   <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer,pdk-fs" remote="aosp" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk" remote="aosp" />
-  <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="laos" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk" remote="aosp" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk" remote="aosp" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk" remote="aosp" />
   <project path="external/eigen" name="platform/external/eigen" groups="pdk" remote="aosp" />
-  <project path="external/elfutils" name="android_external_elfutils" groups="pdk" remote="laos" />
   <project path="external/embunit" name="platform/external/embunit" groups="pdk" remote="aosp" />
   <project path="external/emma" name="platform/external/emma" groups="pdk" remote="aosp" />
   <project path="external/esd" name="platform/external/esd" groups="pdk" remote="aosp" />
   <project path="external/expat" name="platform/external/expat" groups="pdk" remote="aosp" />
   <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk" remote="aosp" />
-  <project path="external/f2fs-tools" name="android_external_f2fs-tools" groups="pdk" remote="laos" />
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" remote="aosp" />
   <project path="external/fec" name="platform/external/fec" groups="pdk" remote="aosp" />
   <project path="external/fio" name="platform/external/fio" groups="pdk" remote="aosp" />
-  <project path="external/flac" name="android_external_flac" groups="pdk" remote="laos" />
   <project path="external/fonttools" name="platform/external/fonttools" groups="pdk" remote="aosp" />
   <project path="external/freetype" name="platform/external/freetype" groups="pdk" remote="aosp" />
-  <project path="external/fsck_msdos" name="android_external_fsck_msdos" groups="pdk" remote="laos" />
   <project path="external/gemmlowp" name="platform/external/gemmlowp" groups="pdk" remote="aosp" />
   <project path="external/giflib" name="platform/external/giflib" groups="pdk,qcom_msm8x26" remote="aosp" />
   <project path="external/glide" name="platform/external/glide" groups="pdk" remote="aosp" />
@@ -139,7 +120,6 @@
   <project path="external/google-fonts/cutive-mono" name="platform/external/google-fonts/cutive-mono" groups="pdk" remote="aosp" />
   <project path="external/google-fonts/dancing-script" name="platform/external/google-fonts/dancing-script" groups="pdk" remote="aosp" />
   <project path="external/google-tv-pairing-protocol" name="platform/external/google-tv-pairing-protocol" groups="pdk" remote="aosp" />
-  <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="laos" />
   <project path="external/gtest" name="platform/external/gtest" groups="pdk" remote="aosp" />
   <project path="external/guava" name="platform/external/guava" groups="pdk" remote="aosp" />
   <project path="external/guice" name="platform/external/guice" groups="pdk" remote="aosp" />
@@ -148,9 +128,7 @@
   <project path="external/hyphenation-patterns" name="platform/external/hyphenation-patterns" groups="pdk" remote="aosp" />
   <project path="external/ImageMagick" name="platform/external/ImageMagick" groups="pdk" remote="aosp" />
   <project path="external/ims" name="platform/external/ims" groups="pdk" remote="aosp" />
-  <project path="external/icu" name="android_external_icu" groups="pdk" remote="laos" />
   <project path="external/iproute2" name="platform/external/iproute2" groups="pdk" remote="aosp" />
-  <project path="external/ipsec-tools" name="android_external_ipsec-tools" groups="pdk-cw-fs,pdk-fs" remote="laos" />
   <project path="external/iptables" name="platform/external/iptables" groups="pdk" remote="aosp" />
   <project path="external/iputils" name="platform/external/iputils" groups="pdk" remote="aosp" />
   <project path="external/iw" name="platform/external/iw" groups="pdk" remote="aosp" />
@@ -160,7 +138,6 @@
   <project path="external/javassist" name="platform/external/javassist" groups="pdk" remote="aosp" />
   <project path="external/jcommander" name="platform/external/jcommander" groups="pdk" remote="aosp" />
   <project path="external/jdiff" name="platform/external/jdiff" groups="pdk" remote="aosp" />
-  <project path="external/jemalloc" name="android_external_jemalloc" groups="pdk" remote="laos" />
   <project path="external/jetty" name="platform/external/jetty" groups="pdk" remote="aosp" />
   <project path="external/jhead" name="platform/external/jhead" groups="pdk" remote="aosp" />
   <project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed,pdk" remote="aosp" />
@@ -178,7 +155,6 @@
   <project path="external/libbrillo" name="platform/external/libbrillo" remote="aosp" />
   <project path="external/libcap" name="platform/external/libcap" groups="pdk" remote="aosp" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" groups="pdk" remote="aosp" />
-  <project path="external/libchrome" name="android_external_libchrome" groups="pdk" remote="laos" />
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" remote="aosp" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" remote="aosp" />
   <project path="external/libdivsufsort" name="platform/external/libdivsufsort" groups="pdk" remote="aosp" />
@@ -195,15 +171,12 @@
   <project path="external/libmicrohttpd" name="platform/external/libmicrohttpd" groups="pdk" remote="aosp" />
   <project path="external/libmpeg2" name="platform/external/libmpeg2" groups="pdk" remote="aosp" />
   <project path="external/libmtp" name="platform/external/libmtp" groups="pdk" remote="aosp" />
-  <project path="external/libnfc-nci" name="android_external_libnfc-nci" groups="pdk" remote="laos" />
-  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" groups="pdk" remote="laos" />
   <project path="external/libnl" name="platform/external/libnl" groups="pdk" remote="aosp" />
   <project path="external/libogg" name="platform/external/libogg" groups="pdk" remote="aosp" />
   <project path="external/libopus" name="platform/external/libopus" groups="pdk" remote="aosp" />
   <project path="external/libpcap" name="platform/external/libpcap" groups="pdk" remote="aosp" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk" remote="aosp" />
   <project path="external/libpng" name="platform/external/libpng" groups="pdk" remote="aosp" />
-  <project path="external/libselinux" name="android_external_libselinux" groups="pdk" remote="laos" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" remote="aosp" />
   <project path="external/libunwind_llvm" name="platform/external/libunwind_llvm" groups="pdk" remote="aosp" />
   <project path="external/libusb" name="platform/external/libusb" groups="pdk" remote="aosp" />
@@ -222,14 +195,12 @@
   <project path="external/llvm" name="platform/external/llvm" groups="pdk" remote="aosp" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk" remote="aosp" />
   <project path="external/lz4" name="platform/external/lz4" groups="pdk" remote="aosp" />
-  <project path="external/lzma" name="android_external_lzma" groups="pdk" remote="laos" />
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk" remote="aosp" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk" remote="aosp" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" remote="aosp" />
   <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk" remote="aosp" />
   <project path="external/messageformat" name="platform/external/messageformat" groups="pdk" remote="aosp" />
   <project path="external/minijail" name="platform/external/minijail" groups="pdk" remote="aosp" />
-  <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="laos" />
   <project path="external/mmc-utils" name="platform/external/mmc-utils" groups="pdk" remote="aosp" />
   <project path="external/mockftpserver" name="platform/external/mockftpserver" groups="pdk" remote="aosp" />
   <project path="external/mockito" name="platform/external/mockito" groups="pdk" remote="aosp" />
@@ -249,7 +220,6 @@
   <project path="external/noto-fonts" name="platform/external/noto-fonts" groups="pdk" remote="aosp" />
   <project path="external/oauth" name="platform/external/oauth" groups="pdk" remote="aosp" />
   <project path="external/objenesis" name="platform/external/objenesis" groups="pdk" remote="aosp" />
-  <project path="external/okhttp" name="android_external_okhttp" groups="pdk" remote="laos" />
   <project path="external/opencv" name="platform/external/opencv" groups="pdk" remote="aosp" />
   <project path="external/opencv3" name="platform/external/opencv3" groups="pdk" remote="aosp" />
   <project path="external/openfst" name="platform/external/openfst" groups="pdk" remote="aosp" />
@@ -272,7 +242,6 @@
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" remote="aosp" />
   <project path="external/shflags" name="platform/external/shflags" groups="pdk" remote="aosp" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" remote="aosp" />
-  <project path="external/skia" name="android_external_skia" groups="pdk,qcom_msm8x26" remote="dnd" />
   <project path="external/sl4a" name="platform/external/sl4a" groups="pdk" remote="aosp" />
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk" remote="aosp" />
   <project path="external/smali" name="platform/external/smali" groups="pdk" remote="aosp" />
@@ -289,12 +258,8 @@
   <project path="external/testng" name="platform/external/testng" groups="pdk" remote="aosp" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk" remote="aosp" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk" remote="aosp" />
-  <project path="external/tinyalsa" name="android_external_tinyalsa" groups="pdk" remote="laos" />
-  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="laos" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" />
-  <project path="external/tinyxml2" name="android_external_tinyxml2" groups="pdk" remote="laos" />
   <project path="external/tlsdate" name="platform/external/tlsdate" groups="pdk" remote="aosp" />
-  <project path="external/toybox" name="android_external_toybox" groups="pdk" remote="laos" />
   <project path="external/tpm2" name="platform/external/tpm2" groups="pdk" remote="aosp" />
   <project path="external/tremolo" name="platform/external/tremolo" groups="pdk" remote="aosp" />
   <project path="external/unicode" name="platform/external/unicode" groups="pdk" remote="aosp" />
@@ -307,15 +272,11 @@
   <project path="external/vulkan-validation-layers" name="platform/external/vulkan-validation-layers" remote="aosp" />
   <project path="external/webp" name="platform/external/webp" groups="pdk,qcom_msm8x26" remote="aosp" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" remote="aosp" />
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="laos" />
   <project path="external/xmlrpcpp" name="platform/external/xmlrpcpp" groups="pdk" remote="aosp" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk" remote="aosp" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk" remote="aosp" />
-  <project path="external/zlib" name="android_external_zlib" groups="pdk" remote="laos" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk" remote="aosp" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" remote="aosp" />
-  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="dnd" />
-  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="dnd" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
@@ -323,117 +284,40 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="dnd" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" remote="aosp" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="frameworks/opt/chips" name="android_frameworks_opt_chips" groups="pdk-cw-fs,pdk-fs" remote="laos" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="frameworks/opt/datetimepicker" name="android_frameworks_opt_datetimepicker" groups="pdk-fs" remote="laos" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/opt/inputconnectioncommon" name="platform/frameworks/opt/inputconnectioncommon" groups="pdk-fs" remote="aosp" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" remote="aosp" />
-  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="laos" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" remote="laos" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="frameworks/opt/setupwizard" name="android_frameworks_opt_setupwizard" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="laos" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="frameworks/opt/vcard" name="android_frameworks_opt_vcard" groups="pdk-cw-fs,pdk-fs" remote="laos" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" remote="aosp" />
-  <project path="frameworks/support" name="android_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="laos" />
   <project path="frameworks/data-binding" name="platform/frameworks/data-binding" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="hardware/akm" name="platform/hardware/akm" groups="pdk" remote="aosp" />
-  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="laos" />
-  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" groups="pdk,broadcom_wlan" remote="laos" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" remote="aosp" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel,pdk" remote="aosp" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel,pdk" remote="aosp" />
   <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel,pdk" remote="aosp" />
-  <project path="hardware/intel/common/libmix" name="android_hardware_intel_common_libmix" groups="intel,pdk" remote="laos" />
   <project path="hardware/intel/common/libstagefrighthw" name="platform/hardware/intel/common/libstagefrighthw" groups="intel,pdk" remote="aosp" />
-  <project path="hardware/intel/common/libva" name="android_hardware_intel_common_libva" groups="intel,pdk" remote="laos" />
-  <project path="hardware/intel/common/libwsbm" name="android_hardware_intel_common_libwsbm" groups="intel,pdk" remote="laos" />
-  <project path="hardware/intel/common/omx-components" name="android_hardware_intel_common_omx-components" groups="intel,pdk" remote="laos" />
-  <project path="hardware/intel/common/utils" name="android_hardware_intel_common_utils" groups="intel,pdk" remote="laos" />
   <project path="hardware/intel/common/wrs_omxil_core" name="platform/hardware/intel/common/wrs_omxil_core" groups="intel" remote="aosp" />
-  <project path="hardware/intel/img/hwcomposer" name="android_hardware_intel_img_hwcomposer" groups="intel,pdk" remote="laos" />
-  <project path="hardware/intel/img/psb_headers" name="android_hardware_intel_img_psb_headers" groups="intel,pdk" remote="laos" />
-  <project path="hardware/intel/img/psb_video" name="android_hardware_intel_img_psb_video" groups="intel,pdk" remote="laos" />
-  <project path="hardware/invensense" name="android_hardware_invensense" groups="invensense,pdk" remote="laos" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="laos" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="laos" />
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt,pdk" remote="aosp" />
-  <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="cm-14.1" remote="dnd" />
-  <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" groups="pdk" remote="laos" />
-  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" remote="laos" />
-  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" groups="qcom" remote="laos" />
-  <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1" remote="dnd" />
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom,qcom_gps,pdk" remote="laos" />
-  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster,pdk" remote="laos" />
-  <project path="hardware/qcom/media" name="android_hardware_qcom_media" groups="qcom,pdk" revision="cm-14.1" remote="dnd" />
-  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk" remote="laos" />
-  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="laos" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3,pdk" remote="aosp" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah,pdk" remote="aosp" />
-  <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" groups="omap4,pdk" remote="laos" />
-  <project path="libcore" name="android_libcore" groups="pdk" remote="laos" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" remote="aosp" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" remote="aosp" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" groups="pdk-fs" remote="laos" />
-  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" groups="pdk-fs" remote="laos" />
-  <project path="packages/apps/CarrierConfig" name="android_packages_apps_CarrierConfig" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="packages/apps/CertInstaller" name="android_packages_apps_CertInstaller" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="dnd" />
-  <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" groups="pdk-fs" remote="dnd" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="dnd" />
-  <project path="packages/apps/Email" name="android_packages_apps_Email" groups="pdk-fs" remote="laos" />
-  <project path="packages/apps/EmergencyInfo" name="android_packages_apps_EmergencyInfo" groups="pdk-fs" remote="laos" />
-  <project path="packages/apps/HTMLViewer" name="android_packages_apps_HTMLViewer" groups="pdk-fs" remote="laos" />
-  <project path="packages/apps/KeyChain" name="android_packages_apps_KeyChain" groups="pdk-fs" remote="laos" />
-  <project path="packages/apps/ManagedProvisioning" name="android_packages_apps_ManagedProvisioning" groups="pdk-fs" remote="laos" />
-  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="dnd" />
-  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="laos" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" remote="aosp" />
-  <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="dnd" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" remote="aosp" />
  <project path="packages/apps/RetailDemo" name="platform/packages/apps/RetailDemo" groups="pdk-fs" remote="aosp" />
-  <project path="packages/apps/SafetyRegulatoryInfo" name="android_packages_apps_SafetyRegulatoryInfo" remote="laos" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="dnd" />
-  <project path="packages/apps/Stk" name="android_packages_apps_Stk" groups="apps_stk,pdk-fs" remote="laos" />
-  <project path="packages/apps/StorageManager" name="android_packages_apps_StorageManager" groups="pdk-fs" remote="laos" />
-  <project path="packages/apps/Tag" name="android_packages_apps_Tag" groups="pdk-fs" remote="laos" />
-  <project path="packages/apps/Terminal" name="android_packages_apps_Terminal" groups="pdk-fs" remote="laos" />
   <project path="packages/apps/Test/connectivity" name="platform/packages/apps/Test/connectivity" groups="pdk" remote="aosp" />
-  <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" groups="pdk-fs" remote="laos" />
-  <project path="packages/apps/WallpaperPicker" name="android_packages_apps_WallpaperPicker" remote="laos" />
   <project path="packages/experimental" name="platform/packages/experimental" remote="aosp" />
-  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="laos" />
-  <project path="packages/providers/BlockedNumberProvider" name="android_packages_providers_BlockedNumberProvider" groups="pdk-fs" remote="laos" />
-  <project path="packages/providers/BookmarkProvider" name="android_packages_providers_BookmarkProvider" groups="pdk-fs" remote="laos" />
-  <project path="packages/providers/CalendarProvider" name="android_packages_providers_CalendarProvider" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="packages/providers/CallLogProvider" name="android_packages_providers_CallLogProvider" groups="pdk-fs" />
-  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="packages/providers/PartnerBookmarksProvider" name="android_packages_providers_PartnerBookmarksProvider" groups="pdk-fs" remote="laos" />
-  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="packages/providers/UserDictionaryProvider" name="android_packages_providers_UserDictionaryProvider" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="packages/screensavers/Basic" name="android_packages_screensavers_Basic" groups="pdk-fs" remote="laos" />
-  <project path="packages/screensavers/PhotoTable" name="android_packages_screensavers_PhotoTable" groups="pdk-fs" remote="laos" />
-  <project path="packages/screensavers/WebView" name="android_packages_screensavers_WebView" groups="pdk-fs" remote="laos" />
-  <project path="packages/services/Mms" name="android_packages_services_Mms" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="laos" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="dnd" />
-  <project path="packages/wallpapers/LivePicker" name="android_packages_wallpapers_LivePicker" groups="pdk-fs" remote="laos" />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" />
   <project path="platform_testing" name="platform/platform_testing" groups="pdk" remote="aosp" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" remote="aosp" />
@@ -445,18 +329,12 @@
   <project path="prebuilts/devtools" name="platform/prebuilts/devtools" groups="pdk-fs" clone-depth="1" remote="aosp" />
   <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/eclipse-build-deps" name="platform/prebuilts/eclipse-build-deps" groups="notdefault,eclipse" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="laos" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" groups="pdk,darwin,arm" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="laos" />
   <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="pdk,darwin" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" groups="pdk,darwin,x86" clone-depth="1" remote="laos" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="laos" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="laos" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" clone-depth="1" remote="aosp" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" clone-depth="1" remote="aosp" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="pdk-fs" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" remote="laos" />
   <project path="prebuilts/gdb/darwin-x86" name="platform/prebuilts/gdb/darwin-x86" groups="darwin" clone-depth="1" remote="aosp" />
   <project path="prebuilts/gdb/linux-x86" name="platform/prebuilts/gdb/linux-x86" groups="linux" clone-depth="1" remote="aosp" />
   <project path="prebuilts/go/darwin-x86" name="platform/prebuilts/go/darwin-x86" groups="darwin,tradefed" clone-depth="1" remote="aosp" />
@@ -474,26 +352,16 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" clone-depth="1" remote="aosp" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" clone-depth="1" remote="aosp" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="system/bt" name="android_system_bt" groups="pdk" remote="laos" />
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" remote="aosp" />
   <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" remote="aosp" />
   <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" remote="aosp" />
   <project path="system/connectivity/shill" name="platform/system/connectivity/shill" remote="aosp" />
-  <project path="system/core" name="android_system_core" groups="pdk" remote="dnd" />
-  <project path="system/extras" name="android_system_extras" groups="pdk" remote="laos" />
   <project path="system/firewalld" name="platform/system/firewalld" remote="aosp" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
-  <project path="system/keymaster" name="android_system_keymaster" groups="pdk" remote="laos" />
-  <project path="system/media" name="android_system_media" remote="dnd" />
   <project path="system/nativepower" name="platform/system/nativepower" remote="aosp" />
-  <project path="system/netd" name="android_system_netd" groups="pdk" remote="laos" />
   <project path="system/nvram" name="platform/system/nvram" remote="aosp" />
-  <project path="system/security" name="android_system_security" groups="pdk" remote="laos" />
-  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="dnd" />
-  <project path="system/tools/aidl" name="android_system_tools_aidl" groups="pdk" remote="laos" />
   <project path="system/tpm" name="platform/system/tpm" remote="aosp" />
   <project path="system/update_engine" name="platform/system/update_engine" groups="pdk" remote="aosp" />
-  <project path="system/vold" name="android_system_vold" groups="pdk" remote="laos" />
   <project path="system/weaved" name="platform/system/weaved" remote="aosp" />
   <project path="system/webservd" name="platform/system/webservd" remote="aosp" />
   <project path="toolchain/binutils" name="toolchain/binutils" remote="aosp" />
@@ -509,6 +377,193 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk" remote="aosp" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" />
+
+  <!-- LineageOS -->
+  <project path="build/kati" name="android_build_kati" groups="pdk,tradefed"  remote="laos" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="laos" />
+  <project path="dalvik" name="android_dalvik" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="development" name="android_development" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="external/aac" name="android_external_aac" groups="pdk" remote="laos" />
+  <project path="external/android-clat" name="android_external_android-clat" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="external/boringssl" name="android_external_boringssl" groups="pdk" remote="laos" />
+  <project path="external/bzip2" name="android_external_bzip2" groups="pdk" remote="laos" />
+  <project path="external/chromium-webview" name="android_external_chromium-webview" groups="pdk" clone-depth="1" remote="laos" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="laos" />
+  <project path="external/elfutils" name="android_external_elfutils" groups="pdk" remote="laos" />
+  <project path="external/f2fs-tools" name="android_external_f2fs-tools" groups="pdk" remote="laos" />
+  <project path="external/flac" name="android_external_flac" groups="pdk" remote="laos" />
+  <project path="external/fsck_msdos" name="android_external_fsck_msdos" groups="pdk" remote="laos" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="laos" />
+  <project path="external/icu" name="android_external_icu" groups="pdk" remote="laos" />
+  <project path="external/ipsec-tools" name="android_external_ipsec-tools" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="external/jemalloc" name="android_external_jemalloc" groups="pdk" remote="laos" />
+  <project path="external/libchrome" name="android_external_libchrome" groups="pdk" remote="laos" />
+  <project path="external/libnfc-nci" name="android_external_libnfc-nci" groups="pdk" remote="laos" />
+  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" groups="pdk" remote="laos" />
+  <project path="external/libselinux" name="android_external_libselinux" groups="pdk" remote="laos" />
+  <project path="external/lzma" name="android_external_lzma" groups="pdk" remote="laos" />
+  <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="laos" />
+  <project path="external/okhttp" name="android_external_okhttp" groups="pdk" remote="laos" />
+  <project path="external/tinyalsa" name="android_external_tinyalsa" groups="pdk" remote="laos" />
+  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="laos" />
+  <project path="external/tinyxml2" name="android_external_tinyxml2" groups="pdk" remote="laos" />
+  <project path="external/toybox" name="android_external_toybox" groups="pdk" remote="laos" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="laos" />
+  <project path="external/zlib" name="android_external_zlib" groups="pdk" remote="laos" />
+  <project path="frameworks/opt/chips" name="android_frameworks_opt_chips" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="frameworks/opt/datetimepicker" name="android_frameworks_opt_datetimepicker" groups="pdk-fs" remote="laos" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" remote="laos" />
+  <project path="frameworks/opt/setupwizard" name="android_frameworks_opt_setupwizard" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="laos" />
+  <project path="frameworks/opt/vcard" name="android_frameworks_opt_vcard" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="frameworks/support" name="android_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="laos" />
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" groups="pdk,broadcom_wlan" remote="laos" />
+  <project path="hardware/intel/common/libmix" name="android_hardware_intel_common_libmix" groups="intel,pdk" remote="laos" />
+  <project path="hardware/intel/common/libva" name="android_hardware_intel_common_libva" groups="intel,pdk" remote="laos" />
+  <project path="hardware/intel/common/libwsbm" name="android_hardware_intel_common_libwsbm" groups="intel,pdk" remote="laos" />
+  <project path="hardware/intel/common/omx-components" name="android_hardware_intel_common_omx-components" groups="intel,pdk" remote="laos" />
+  <project path="hardware/intel/common/utils" name="android_hardware_intel_common_utils" groups="intel,pdk" remote="laos" />
+  <project path="hardware/intel/img/hwcomposer" name="android_hardware_intel_img_hwcomposer" groups="intel,pdk" remote="laos" />
+  <project path="hardware/intel/img/psb_headers" name="android_hardware_intel_img_psb_headers" groups="intel,pdk" remote="laos" />
+  <project path="hardware/intel/img/psb_video" name="android_hardware_intel_img_psb_video" groups="intel,pdk" remote="laos" />
+  <project path="hardware/invensense" name="android_hardware_invensense" groups="invensense,pdk" remote="laos" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="laos" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="laos" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" remote="laos" />
+  <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" groups="pdk" remote="laos" />
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" groups="qcom" remote="laos" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom,qcom_gps,pdk" remote="laos" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk" remote="laos" />
+  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster,pdk" remote="laos" />
+  <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" groups="omap4,pdk" remote="laos" /> 
+  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="laos" />
+  <project path="libcore" name="android_libcore" groups="pdk" remote="laos" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" groups="pdk-fs" remote="laos" />
+  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" groups="pdk-fs" remote="laos" />
+  <project path="packages/apps/CarrierConfig" name="android_packages_apps_CarrierConfig" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="packages/apps/CertInstaller" name="android_packages_apps_CertInstaller" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="packages/apps/Email" name="android_packages_apps_Email" groups="pdk-fs" remote="laos" />
+  <project path="packages/apps/EmergencyInfo" name="android_packages_apps_EmergencyInfo" groups="pdk-fs" remote="laos" />
+  <project path="packages/apps/HTMLViewer" name="android_packages_apps_HTMLViewer" groups="pdk-fs" remote="laos" />
+  <project path="packages/apps/KeyChain" name="android_packages_apps_KeyChain" groups="pdk-fs" remote="laos" />
+  <project path="packages/apps/ManagedProvisioning" name="android_packages_apps_ManagedProvisioning" groups="pdk-fs" remote="laos" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="laos" />
+  <project path="packages/apps/SafetyRegulatoryInfo" name="android_packages_apps_SafetyRegulatoryInfo" remote="laos" />
+  <project path="packages/apps/Stk" name="android_packages_apps_Stk" groups="apps_stk,pdk-fs" remote="laos" />
+  <project path="packages/apps/StorageManager" name="android_packages_apps_StorageManager" groups="pdk-fs" remote="laos" />
+  <project path="packages/apps/Tag" name="android_packages_apps_Tag" groups="pdk-fs" remote="laos" />
+  <project path="packages/apps/Terminal" name="android_packages_apps_Terminal" groups="pdk-fs" remote="laos" />
+  <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" groups="pdk-fs" remote="laos" />
+  <project path="packages/apps/WallpaperPicker" name="android_packages_apps_WallpaperPicker" remote="laos" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="laos" />
+  <project path="packages/providers/BlockedNumberProvider" name="android_packages_providers_BlockedNumberProvider" groups="pdk-fs" remote="laos" />
+  <project path="packages/providers/BookmarkProvider" name="android_packages_providers_BookmarkProvider" groups="pdk-fs" remote="laos" />
+  <project path="packages/providers/CalendarProvider" name="android_packages_providers_CalendarProvider" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="packages/providers/CallLogProvider" name="android_packages_providers_CallLogProvider" groups="pdk-fs" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="packages/providers/PartnerBookmarksProvider" name="android_packages_providers_PartnerBookmarksProvider" groups="pdk-fs" remote="laos" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="packages/providers/UserDictionaryProvider" name="android_packages_providers_UserDictionaryProvider" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="packages/screensavers/Basic" name="android_packages_screensavers_Basic" groups="pdk-fs" remote="laos" />
+  <project path="packages/screensavers/PhotoTable" name="android_packages_screensavers_PhotoTable" groups="pdk-fs" remote="laos" />
+  <project path="packages/screensavers/WebView" name="android_packages_screensavers_WebView" groups="pdk-fs" remote="laos" />
+  <project path="packages/services/Mms" name="android_packages_services_Mms" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="laos" />
+  <project path="packages/wallpapers/LivePicker" name="android_packages_wallpapers_LivePicker" groups="pdk-fs" remote="laos" />
+  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="laos" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="laos" />
+  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" groups="pdk,darwin,x86" clone-depth="1" remote="laos" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="laos" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="laos" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" remote="laos" />
+  <project path="system/bt" name="android_system_bt" groups="pdk" remote="laos" />
+  <project path="system/extras" name="android_system_extras" groups="pdk" remote="laos" />
+  <project path="system/keymaster" name="android_system_keymaster" groups="pdk" remote="laos" />
+  <project path="system/netd" name="android_system_netd" groups="pdk" remote="laos" />
+  <project path="system/security" name="android_system_security" groups="pdk" remote="laos" />
+  <project path="system/tools/aidl" name="android_system_tools_aidl" groups="pdk" remote="laos" />
+  <project path="system/vold" name="android_system_vold" groups="pdk" remote="laos" />
+  <!-- LineageOS additions -->
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="laos" />
+  <project path="external/ahbottomnavigation" name="android_external_ahbottomnavigation" remote="laos" />
+  <project path="external/bash" name="android_external_bash" remote="laos" />
+  <project path="external/cmsdk-api-coverage" name="android_external_cmsdk-api-coverage" remote="laos" />
+  <project path="external/exfat" name="android_external_exfat" remote="laos" />
+  <project path="external/ffmpeg" name="android_external_ffmpeg" remote="laos" />
+  <project path="external/fuse" name="android_external_fuse" remote="laos" />
+  <project path="external/gello-build" name="android_external_gello_build" remote="laos" />
+  <project path="external/google" name="android_external_google" remote="laos" />
+  <project path="external/htop" name="android_external_htop" remote="laos" />
+  <project path="external/koush/ion" name="ion" remote="laos" />
+  <project path="external/libncurses" name="android_external_libncurses" remote="laos" />
+  <project path="external/libphonenumbergoogle" name="android_external_libphonenumbergoogle" remote="laos" />
+  <project path="external/libtar" name="android_external_libtar" remote="laos" />
+  <project path="external/libtruezip" name="android_external_libtruezip" remote="laos" />
+  <project path="external/lzo" name="android_external_lzo" remote="laos" />
+  <project path="external/nano" name="android_external_nano" remote="laos" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="laos" />
+  <project path="external/openssh" name="android_external_openssh" remote="laos" />
+  <project path="external/p7zip" name="android_external_p7zip" remote="laos" />
+  <project path="external/pigz" name="android_external_pigz" remote="laos" />
+  <project path="external/rsync" name="android_external_rsync" remote="laos" />
+  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="laos" />
+  <project path="external/uicommon" name="android_external_cyanogen_UICommon" remote="laos" />
+  <project path="external/unrar" name="android_external_unrar" remote="laos" />
+  <project path="external/unzip" name="android_external_unzip" remote="laos" />
+  <project path="external/vim" name="android_external_vim" remote="laos" />
+  <project path="external/yaffs2" name="android_external_yaffs2" remote="laos" />
+  <project path="external/zip" name="android_external_zip" remote="laos" />
+  <project path="hardware/cyanogen" name="android_hardware_cyanogen" remote="laos" />
+  <project path="frameworks/opt/hardware" name="android_frameworks_opt_hardware" remote="laos" />
+  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="laos" />
+  <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="laos" />
+  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="laos" />
+  <project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" remote="laos" />
+  <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="laos" />
+  <project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="laos" />
+  <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="laos" />
+  <project path="packages/apps/Profiles" name="android_packages_apps_Profiles" remote="laos" />
+  <project path="packages/providers/DataUsageProvider" name="android_packages_providers_DataUsageProvider" remote="laos" />
+  <project path="packages/providers/WeatherProvider" name="android_packages_providers_WeatherProvider" remote="laos" />
+  <project path="packages/services/CMAudioService" name="android_packages_services_CMAudioService" remote="laos" />
+  <project path="packages/services/LiveLockScreenService" name="android_packages_services_LiveLockScreenService" remote="laos" />
+  <project path="packages/services/WeatherService" name="android_packages_services_WeatherService" remote="laos" />
+  <project path="prebuilts/cmsdk" name="android_prebuilts_cmsdk" clone-depth="1" remote="laos" />
+  <project path="system/extras/su" name="android_system_extras_su" remote="laos" />
+  <project path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="android_packages_apps_OpenWeatherMapProvider" remote="laos" />
+  <project path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" name="android_packages_apps_WundergroundWeatherProvider" remote="laos" />
+  <project path="vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider" name="android_packages_apps_YahooWeatherProvider" remote="laos" />
+
+  <!--LineageOS remote CodeAurora additions -->
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="laos" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="laos" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="laos" />
+  <project path="external/brctl" name="android_external_brctl" remote="laos" />
+  <project path="external/connectivity" name="android_external_connectivity" remote="laos" />
+  <project path="external/ebtables" name="android_external_ebtables" remote="laos" />
+  <project path="external/gson" name="android_external_gson" remote="laos" />
+  <project path="external/json-c" name="android_external_json-c" remote="laos" />
+  <project path="external/libnetfilter_conntrack" name="android_external_libnetfilter_conntrack" remote="laos" />
+  <project path="external/libnfnetlink" name="android_external_libnfnetlink" remote="laos" />
+  <project path="external/powertop" name="android_external_powertop" remote="laos" />
+  <project path="external/protobuf-c" name="android_external_protobuf-c" remote="laos" />
+  <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" groups="qcom" revision="cm-14.1-caf" remote="laos" />
+  <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" groups="qcom,qcom_fm" remote="laos" />
+  <project path="hardware/qcom/wlan-caf" name="android_hardware_qcom_wlan" groups="qcom_wlan" revision="cm-14.1-caf" remote="laos" />
+  <project path="hardware/ril-caf" name="android_hardware_ril" groups="pdk" revision="cm-14.1-caf" remote="laos" />
+  <project path="system/qcom" name="android_system_qcom" groups="qcom" remote="laos" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="laos" />
+  <project path="vendor/qcom/opensource/bluetooth" name="android_vendor_qcom_opensource_bluetooth" remote="laos" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="laos" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="laos" />
+  <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="laos" />
+  <project path="vendor/qcom/opensource/time-services" name="android_vendor_qcom_opensource_time-services" remote="laos" />
 
   <include name="dnd.xml" />
 
