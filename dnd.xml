@@ -7,6 +7,7 @@
   </project>
   <project path="art" name="android_art" groups="pdk"  remote="dnd" />
   <project path="bionic" name="android_bionic" groups="pdk"  remote="dnd" />
+  <project path="external/chromium-webview" name="android_external_chromium-webview" groups="pdk" clone-depth="1" remote="dnd" />
   <project path="external/skia" name="android_external_skia" groups="pdk,qcom_msm8x26" remote="dnd" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="dnd" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="dnd" />
