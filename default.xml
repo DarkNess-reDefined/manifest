@@ -488,7 +488,6 @@
   <project path="system/tools/aidl" name="android_system_tools_aidl" groups="pdk" remote="laos" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="laos" />
   <!-- LineageOS additions -->
-  <project path="device/qcom/common" name="android_device_qcom_common" remote="laos" />
   <project path="external/ahbottomnavigation" name="android_external_ahbottomnavigation" remote="laos" />
   <project path="external/bash" name="android_external_bash" remote="laos" />
   <project path="external/cmsdk-api-coverage" name="android_external_cmsdk-api-coverage" remote="laos" />

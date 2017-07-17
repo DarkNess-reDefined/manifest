@@ -56,6 +56,7 @@
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="caf" revision="refs/tags/LA.UM.5.7.r1-09100-8x98.0" />
 
   <!-- Hals -->
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="dnd" />
   <project path="hardware/qcom/audio-caf/apq8084" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8084" remote="laos" />
   <project path="hardware/qcom/audio-caf/msm8916" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8916" remote="laos" />
   <project path="hardware/qcom/audio-caf/msm8937" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8937" remote="laos" />
