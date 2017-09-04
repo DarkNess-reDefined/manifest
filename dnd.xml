@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- DarkNess-reDefined Additions -->
+  <project path="manifest" name="manifest" remote="dnd"  />
+  <project path="device/dnd/sepolicy" name="android_device_dnd_sepolicy" remote="dnd"  />
+  <project path="vendor/dnd" name="android_vendor_dnd"  remote="dnd" />
+
+  <!-- LineageOS additions -->
+  <project path="external/bash" name="android_external_bash" remote="laos" />
+  <!--<project path="external/cmsdk-api-coverage" name="android_external_cmsdk-api-coverage" remote="laos" />-->
+  <project path="external/exfat" name="android_external_exfat" remote="laos" />
+  <!--<project path="external/ffmpeg" name="android_external_ffmpeg" remote="laos" />-->
+  <project path="external/fuse" name="android_external_fuse" remote="laos" />
+  <project path="external/htop" name="android_external_htop" remote="laos" />
+  <!--<project path="external/koush/ion" name="ion" remote="laos" />-->
+  <project path="external/libncurses" name="android_external_libncurses" remote="laos" />
+  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="laos" />
+  <!--<project path="external/libphonenumbergoogle" name="android_external_libphonenumbergoogle" remote="laos" />
+  <project path="external/libtar" name="android_external_libtar" remote="laos" />
+  <project path="external/libtruezip" name="android_external_libtruezip" remote="laos" />
+  <project path="external/lzo" name="android_external_lzo" remote="laos" />-->
+  <project path="external/nano" name="android_external_nano" remote="laos" />
+  <!--<project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="laos" />
+  <project path="external/p7zip" name="android_external_p7zip" remote="laos" />
+  <project path="external/pigz" name="android_external_pigz" remote="laos" />
+  <project path="external/rsync" name="android_external_rsync" remote="laos" />
+  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="laos" />
+  <project path="external/uicommon" name="android_external_cyanogen_UICommon" remote="laos" />
+  <project path="external/unrar" name="android_external_unrar" remote="laos" />
+  <project path="external/unzip" name="android_external_unzip" remote="laos" />
+  <project path="external/vim" name="android_external_vim" remote="laos" />
+  <project path="external/yaffs2" name="android_external_yaffs2" remote="laos" />
+  <project path="external/zip" name="android_external_zip" remote="laos" />
+  <project path="hardware/cyanogen" name="android_hardware_cyanogen" remote="laos" />
+  <project path="frameworks/opt/hardware" name="android_frameworks_opt_hardware" remote="laos" />
+  <project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="laos" />
+  <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="laos" />
+  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="laos" />
+  <project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" remote="laos" />
+  <project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="laos" />-->
+  <project path="packages/apps/Eleven" name="android_packages_apps_Eleven" remote="laos" />
+  <!--<project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="laos" />-->
+  <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="laos" />
+  <project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="laos" />
+  <!--<project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="laos" />
+  <project path="packages/apps/Profiles" name="android_packages_apps_Profiles" remote="laos" />-->
+  <project path="packages/apps/Recorder" name="android_packages_apps_Recorder" remote="laos" />
+  <!--<project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="laos" />
+  <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="laos" />-->
+  <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="laos" />
+  <!--<project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="laos" />
+  <project path="packages/providers/DataUsageProvider" name="android_packages_providers_DataUsageProvider" remote="laos" />
+  <project path="packages/providers/WeatherProvider" name="android_packages_providers_WeatherProvider" remote="laos" />
+  <project path="packages/services/CMAudioService" name="android_packages_services_CMAudioService" remote="laos" />
+  <project path="packages/services/WeatherService" name="android_packages_services_WeatherService" remote="laos" />
+  <project path="prebuilts/cmsdk" name="android_prebuilts_cmsdk" clone-depth="1" remote="laos" />
+  <project path="system/extras/su" name="android_system_extras_su" remote="laos" />-->
+  <!--<project path="vendor/cmsdk" name="cm_platform_sdk" remote="laos" />
+  <project path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="android_packages_apps_OpenWeatherMapProvider" remote="laos" />
+  <project path="vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider" name="android_packages_apps_WundergroundWeatherProvider" remote="laos" />
+  <project path="vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider" name="android_packages_apps_YahooWeatherProvider" remote="laos" /> -->
+
+  <!-- CodeAurora additions
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="laos" />-->
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="laos" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="laos" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="laos" />
+  <project path="external/brctl" name="android_external_brctl" remote="laos" />
+  <project path="external/connectivity" name="android_external_connectivity" remote="laos" />
+  <project path="external/ebtables" name="android_external_ebtables" remote="laos" />
+  <!--<project path="external/gson" name="android_external_gson" remote="laos" />-->
+  <project path="external/json-c" name="android_external_json-c" remote="laos" />
+  <project path="external/powertop" name="android_external_powertop" remote="laos" />
+  <!--<project path="external/protobuf-c" name="android_external_protobuf-c" remote="laos" />
+  <project path="hardware/qcom/audio-caf/apq8084" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="laos" revision="lineage-15.0-caf-8084" />
+  <project path="hardware/qcom/audio-caf/msm8916" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="laos" revision="lineage-15.0-caf-8916" />
+  <project path="hardware/qcom/audio-caf/msm8937" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="laos" revision="lineage-15.0-caf-8937" />
+  <project path="hardware/qcom/audio-caf/msm8952" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="laos" revision="lineage-15.0-caf-8952" />-->
+  <project path="hardware/qcom/audio-caf/msm8960" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="laos" revision="lineage-15.0-caf-8960" />
+  <project path="hardware/qcom/audio-caf/msm8974" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="laos" revision="lineage-15.0-caf-8974" />
+  <project path="hardware/qcom/audio-caf/msm8994" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="laos" revision="lineage-15.0-caf-8994" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="laos" revision="lineage-15.0-caf-8996" />
+  <project path="hardware/qcom/audio-caf/msm8998" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="laos" revision="lineage-15.0-caf-8998" />
+  <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" groups="qcom,pdk" remote="laos" revision="lineage-15.0-caf" />
+  <!--<project path="hardware/qcom/display-caf/apq8084" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="laos" revision="lineage-15.0-caf-8084" />
+  <project path="hardware/qcom/display-caf/msm8916" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="laos" revision="lineage-15.0-caf-8916" />
+  <project path="hardware/qcom/display-caf/msm8937" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="laos" revision="lineage-15.0-caf-8937" />
+  <project path="hardware/qcom/display-caf/msm8952" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="laos" revision="lineage-15.0-caf-8952" />-->
+  <project path="hardware/qcom/display-caf/msm8960" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="laos" revision="lineage-15.0-caf-8960" />
+  <project path="hardware/qcom/display-caf/msm8974" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="laos" revision="lineage-15.0-caf-8974" />
+  <project path="hardware/qcom/display-caf/msm8994" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="laos" revision="lineage-15.0-caf-8994" />
+  <project path="hardware/qcom/display-caf/msm8996" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="laos" revision="lineage-15.0-caf-8996" />
+  <project path="hardware/qcom/display-caf/msm8998" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="laos" revision="lineage-15.0-caf-8998" />
+  <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" groups="qcom,qcom_fm" remote="laos" />
+  <!--<project path="hardware/qcom/media-caf/apq8084" name="android_hardware_qcom_media" groups="qcom,pdk" remote="laos" revision="lineage-15.0-caf-8084" />
+  <project path="hardware/qcom/media-caf/msm8916" name="android_hardware_qcom_media" groups="qcom,pdk" remote="laos" revision="lineage-15.0-caf-8916" />
+  <project path="hardware/qcom/media-caf/msm8937" name="android_hardware_qcom_media" groups="qcom,pdk" remote="laos" revision="lineage-15.0-caf-8937" />
+  <project path="hardware/qcom/media-caf/msm8952" name="android_hardware_qcom_media" groups="qcom,pdk" remote="laos" revision="lineage-15.0-caf-8952" />-->
+  <project path="hardware/qcom/media-caf/msm8960" name="android_hardware_qcom_media" groups="qcom,pdk" remote="laos" revision="lineage-15.0-caf-8960" />
+  <project path="hardware/qcom/media-caf/msm8974" name="android_hardware_qcom_media" groups="qcom,pdk" remote="laos" revision="lineage-15.0-caf-8974" />
+  <project path="hardware/qcom/media-caf/msm8994" name="android_hardware_qcom_media" groups="qcom,pdk" remote="laos" revision="lineage-15.0-caf-8994" />
+  <project path="hardware/qcom/media-caf/msm8996" name="android_hardware_qcom_media" groups="qcom,pdk" remote="laos" revision="lineage-15.0-caf-8996" />
+  <project path="hardware/qcom/media-caf/msm8998" name="android_hardware_qcom_media" groups="qcom,pdk" remote="laos" revision="lineage-15.0-caf-8998" />
+  <project path="hardware/qcom/wlan-caf" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk" remote="laos" revision="lineage-15.0-caf" />
+  <project path="hardware/ril-caf" name="android_hardware_ril" groups="pdk" remote="laos" revision="lineage-15.0-caf" />
+  <project path="system/qcom" name="android_system_qcom" groups="qcom" remote="laos" />
+  <!--<project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="laos" />
+  <project path="vendor/qcom/opensource/bluetooth" name="android_vendor_qcom_opensource_bluetooth" remote="laos" />-->
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="laos" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="laos" />
+  <!--<project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="laos" />
+  <project path="vendor/qcom/opensource/time-services" name="android_vendor_qcom_opensource_time-services" remote="laos" /> -->
+
+  <!-- Infrastructure -->
+  <project path="lineage/ansible" name="ansible" groups="infra" remote="laos" revision="master" />
+  <project path="lineage/crowdin" name="cm_crowdin" groups="infra" remote="laos" revision="master" />
+  <project path="lineage/cve" name="cve_tracker" groups="infra" remote="laos" revision="master" />
+  <project path="lineage/jenkins" name="hudson" groups="infra" remote="laos" revision="master" />
+  <project path="lineage/mirror" name="mirror" groups="infra" remote="laos" revision="master" />
+  <project path="lineage/slackbot" name="slackbot" groups="infra" remote="laos" revision="master" />
+  <project path="lineage/stats" name="tribble-tracker" groups="infra" remote="laos" revision="master" />
+  <project path="lineage/updater" name="lineageos_updater" groups="infra" remote="laos" revision="master" />
+  <project path="lineage/website" name="www" groups="infra" remote="laos" revision="master" />
+  <project path="lineage/wiki" name="lineage_wiki" groups="infra" remote="laos" revision="master" />
+
+  <!-- Tools -->
+  <project path="lineage/contributors-cloud-generator" name="contributors-cloud-generator" groups="tools" remote="laos" revision="master" />
+  <project path="lineage/scripts" name="scripts" groups="tools" remote="laos" revision="master" />
+</manifest>
