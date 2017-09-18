@@ -1,3 +1,10 @@
+[<center><img src="https://github.com/DarkNess-reDefined/reDefinition_documentation/raw/graphics/dnd.png" height="100%" width="100%;"/></center>](https://github.com/DarkNess-reDefined)
+
+DarkNess reDefined
+==================
+As you all know "Darkness is the entity that gives light a sense".
+Our theme is light and glossy, Which gives you the fastest and smoothest android experiences without any lags.
+
 WIP Manifest For Darkness-reDefiNed O
 
 
