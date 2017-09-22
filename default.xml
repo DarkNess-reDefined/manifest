@@ -516,7 +516,7 @@
   <project path="system/core" name="android_system_core" groups="pdk" remote="dnd" />
   <project path="system/extras" name="android_system_extras" groups="pdk" remote="laos" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
-  <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk" remote="aosp" />
+  <project path="system/hardware/interfaces" name="android_system_hardware_interfaces" groups="pdk" remote="laos" />
   <project path="system/hwservicemanager" name="platform/system/hwservicemanager" groups="pdk" remote="aosp" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" remote="aosp" />
   <project path="system/libfmq" name="platform/system/libfmq" groups="pdk" remote="aosp" />
