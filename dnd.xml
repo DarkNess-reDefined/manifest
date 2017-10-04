@@ -3,6 +3,7 @@
 
   <!-- DarkNess-reDefined Additions -->
   <project path="manifest" name="manifest" remote="dnd"  />
+  <project path="bionic" name="android_bionic" remote="dnd" />
   <project path="device/dnd/sepolicy" name="android_device_dnd_sepolicy" remote="dnd"  />
   <project path="vendor/dnd" name="android_vendor_dnd"  remote="dnd" />
 
