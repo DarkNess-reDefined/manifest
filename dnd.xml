@@ -73,6 +73,7 @@
   <project path="external/json-c" name="android_external_json-c" remote="laos" />
   <project path="external/powertop" name="android_external_powertop" remote="laos" />
   <!--<project path="external/protobuf-c" name="android_external_protobuf-c" remote="laos" /> -->
+  <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="laos" />
   <project path="hardware/qcom/audio-caf/apq8084" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="laos" revision="lineage-15.0-caf-8084" />
   <project path="hardware/qcom/audio-caf/msm8916" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="laos" revision="lineage-15.0-caf-8916" />
   <!--<project path="hardware/qcom/audio-caf/msm8937" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="laos" revision="lineage-15.0-caf-8937" />-->
