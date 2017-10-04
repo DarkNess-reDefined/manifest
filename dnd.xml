@@ -113,19 +113,4 @@
   <!--<project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="laos" />
   <project path="vendor/qcom/opensource/time-services" name="android_vendor_qcom_opensource_time-services" remote="laos" /> -->
 
-  <!-- Infrastructure -->
-  <project path="lineage/ansible" name="ansible" groups="infra" remote="laos" revision="master" />
-  <project path="lineage/crowdin" name="cm_crowdin" groups="infra" remote="laos" revision="master" />
-  <project path="lineage/cve" name="cve_tracker" groups="infra" remote="laos" revision="master" />
-  <project path="lineage/jenkins" name="hudson" groups="infra" remote="laos" revision="master" />
-  <project path="lineage/mirror" name="mirror" groups="infra" remote="laos" revision="master" />
-  <project path="lineage/slackbot" name="slackbot" groups="infra" remote="laos" revision="master" />
-  <project path="lineage/stats" name="tribble-tracker" groups="infra" remote="laos" revision="master" />
-  <project path="lineage/updater" name="lineageos_updater" groups="infra" remote="laos" revision="master" />
-  <project path="lineage/website" name="www" groups="infra" remote="laos" revision="master" />
-  <project path="lineage/wiki" name="lineage_wiki" groups="infra" remote="laos" revision="master" />
-
-  <!-- Tools -->
-  <project path="lineage/contributors-cloud-generator" name="contributors-cloud-generator" groups="tools" remote="laos" revision="master" />
-  <project path="lineage/scripts" name="scripts" groups="tools" remote="laos" revision="master" />
 </manifest>
