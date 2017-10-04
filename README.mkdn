@@ -5,7 +5,28 @@ DarkNess reDefined
 As you all know "Darkness is the entity that gives light a sense".
 Our theme is light and glossy, Which gives you the fastest and smoothest android experiences without any lags.
 
-WIP Manifest For Darkness-reDefiNed O
+[WIP] Manifest For Darkness-reDefiNed Oreo.
 
 
-    repo init -u http://github.com/dnd-o/manifest.git -b o
+   ``` repo init -u http://github.com/DarkNess-reDefined/manifest.git -b 8.x```
+
+Then to sync up:
+---------------
+
+    ```repo sync --force-sync --force-broken --no-clone-bundle -jxxx (ur choice dude)```
+
+Finally to build:
+-----------------
+
+```bash
+  . build/envsetup.sh
+  lunch dnd_device_codename-userdebug
+  mka darkness
+```
+
+Credits
+-------
+* [**LineageOS (Base)**](https://github.com/LineageOS)
+* [**DirtyUnicorns**](https://github.com/DirtyUnicorns)
+* [**TeamSubstratum (Theme Engine)**](https://github.com/Substratum)
+
