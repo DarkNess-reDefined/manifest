@@ -17,15 +17,15 @@
   <!--<project path="external/koush/ion" name="ion" remote="laos" />-->
   <project path="external/libncurses" name="android_external_libncurses" remote="laos" />
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="laos" />
-  <!--<project path="external/libphonenumbergoogle" name="android_external_libphonenumbergoogle" remote="laos" />
+  <!--<project path="external/libphonenumbergoogle" name="android_external_libphonenumbergoogle" remote="laos" />-->
   <project path="external/libtar" name="android_external_libtar" remote="laos" />
-  <project path="external/libtruezip" name="android_external_libtruezip" remote="laos" />
+  <!--<project path="external/libtruezip" name="android_external_libtruezip" remote="laos" />
   <project path="external/lzo" name="android_external_lzo" remote="laos" />-->
   <project path="external/nano" name="android_external_nano" remote="laos" />
-  <!--<project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="laos" />
-  <project path="external/p7zip" name="android_external_p7zip" remote="laos" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="laos" />
+  <!--<project path="external/p7zip" name="android_external_p7zip" remote="laos" />-->
   <project path="external/pigz" name="android_external_pigz" remote="laos" />
-  <project path="external/rsync" name="android_external_rsync" remote="laos" />
+  <!--<project path="external/rsync" name="android_external_rsync" remote="laos" />
   <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="laos" />
   <project path="external/uicommon" name="android_external_cyanogen_UICommon" remote="laos" />
   <project path="external/unrar" name="android_external_unrar" remote="laos" />
