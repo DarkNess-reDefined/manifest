@@ -17,7 +17,6 @@
   <!--<project path="external/koush/ion" name="ion" remote="laos" />-->
   <project path="external/libncurses" name="android_external_libncurses" remote="laos" />
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="laos" />
-  <!--<project path="external/libphonenumbergoogle" name="android_external_libphonenumbergoogle" remote="laos" />-->
   <project path="external/libtar" name="android_external_libtar" remote="laos" />
   <!--<project path="external/libtruezip" name="android_external_libtruezip" remote="laos" />
   <project path="external/lzo" name="android_external_lzo" remote="laos" />-->
