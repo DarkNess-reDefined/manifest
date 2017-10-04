@@ -5,6 +5,7 @@
   <project path="manifest" name="manifest" remote="dnd"  />
   <project path="bionic" name="android_bionic" remote="dnd" />
   <project path="device/dnd/sepolicy" name="android_device_dnd_sepolicy" remote="dnd"  />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="dnd" />
   <project path="packages/apps/Darkness-Arena" name="android_packages_apps_Darkness-Arena" remote="dnd" />
   <project path="vendor/dnd" name="android_vendor_dnd"  remote="dnd" />
 
