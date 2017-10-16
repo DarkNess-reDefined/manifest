@@ -8,6 +8,10 @@
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="dnd" />
   <project path="packages/apps/Darkness-Arena" name="android_packages_apps_Darkness-Arena" remote="dnd" />
   <project path="vendor/dnd" name="android_vendor_dnd"  remote="dnd" />
+  <project path="hardware/dnd/interfaces" name="android_hardware_dnd_interfaces" remote="dnd" >
+    <copyfile dest="hardware/dnd/Android.bp" src="Android.bp"/>
+  </project>
+  <project path="system/qcom" name="android_system_qcom" groups="qcom" remote="dnd" />
 
   <!-- LineageOS additions -->
   <project path="device/qcom/common" name="android_device_qcom_common" remote="laos" />
@@ -37,9 +41,6 @@
   <project path="external/zip" name="android_external_zip" remote="laos" />
   <project path="hardware/cyanogen" name="android_hardware_cyanogen" remote="laos" />
   <project path="frameworks/opt/hardware" name="android_frameworks_opt_hardware" remote="laos" />-->
-  <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="laos" >
-    <copyfile dest="hardware/lineage/Android.bp" src="Android.bp"/>
-  </project>
   <!--<project path="hardware/ti/omap4" name="android_hardware_ti_omap4" remote="laos" />
   <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="laos" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="laos" />
@@ -110,7 +111,6 @@
   <project path="hardware/qcom/media-caf/msm8998" name="android_hardware_qcom_media" groups="qcom,pdk" remote="laos" revision="lineage-15.0-caf-8998" />
   <project path="hardware/qcom/wlan-caf" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk" remote="laos" revision="lineage-15.0-caf" />
   <project path="hardware/ril-caf" name="android_hardware_ril" groups="pdk" remote="laos" revision="lineage-15.0-caf" />
-  <project path="system/qcom" name="android_system_qcom" groups="qcom" remote="laos" />
   <!--<project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="laos" />
   <project path="vendor/qcom/opensource/bluetooth" name="android_vendor_qcom_opensource_bluetooth" remote="laos" />-->
   <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="laos" />
