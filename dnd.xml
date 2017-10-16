@@ -12,6 +12,7 @@
     <copyfile dest="hardware/dnd/Android.bp" src="Android.bp"/>
   </project>
   <project path="system/qcom" name="android_system_qcom" groups="qcom" remote="dnd" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="dnd" />
 
   <!-- LineageOS additions -->
   <project path="device/qcom/common" name="android_device_qcom_common" remote="laos" />
