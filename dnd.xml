@@ -47,16 +47,16 @@
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="laos" />
   <project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" remote="laos" />
   <project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="laos" />-->
-  <project path="packages/apps/Eleven" name="android_packages_apps_Eleven" remote="laos" />
+  <!--<project path="packages/apps/Eleven" name="android_packages_apps_Eleven" remote="laos" />-->
   <!--<project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="laos" />-->
   <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="laos" />
-  <project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="laos" />
+  <!--<project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="laos" />-->
   <!--<project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="laos" />
   <project path="packages/apps/Profiles" name="android_packages_apps_Profiles" remote="laos" />-->
   <project path="packages/apps/Recorder" name="android_packages_apps_Recorder" remote="laos" />
   <!--<project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="laos" />
   <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="laos" />-->
-  <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="laos" />
+  <!--<project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="laos" />-->
   <!--<project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="laos" />
   <project path="packages/providers/DataUsageProvider" name="android_packages_providers_DataUsageProvider" remote="laos" />
   <project path="packages/providers/WeatherProvider" name="android_packages_providers_WeatherProvider" remote="laos" />
